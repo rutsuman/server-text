@@ -670,5 +670,16 @@
     </div>
 </div>
 <script src="script.js"></script>
+<!-- Supabase client library -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Initialize Supabase -->
+<script>
+    const SUPABASE_URL = 'https://qzxvwoyigrrpdywvhckk.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_ncHOn7TNowbRZS9s-RYeuA_2m8ka_Iu';
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    
+    console.log('Supabase initialized:', supabase);
+</script>
 </body>
 </html>
